@@ -617,3 +617,5 @@ INFO 2025-08-16 15:25:59,796 autoreload 40224 35292 D:\INSMA_POC\POC4\services\a
 INFO 2025-08-16 15:28:33,520 autoreload 42244 25488 Watching for file changes with StatReloader
 INFO 2025-08-16 15:28:40,005 views 42244 32344 User ID 2 logged out successfully
 INFO 2025-08-16 15:28:40,005 basehttp 42244 32344 "POST /api/v1/auth/logout/ HTTP/1.1" 200 46
+INFO 2025-08-16 16:15:09,364 autoreload 38148 38728 D:\INSMA_POC\Prajwal_Git\POC4\services\auth_service\backend\config\settings.py changed, reloading.
+INFO 2025-08-16 16:15:11,098 autoreload 5888 39948 Watching for file changes with StatReloader
