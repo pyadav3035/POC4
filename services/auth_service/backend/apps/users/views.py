@@ -745,20 +745,19 @@ class SignUpAPIView(APIView):
 class HomePageView(APIView):
     permission_classes = [AllowAny]
 
-    def get(self, request):
-        instructions_qs = HomePageInformation.objects.filter(tab_type='Instructions')
-        offline_qs = HomePageInformation.objects.filter(tab_type='Offline')
-        downloads_qs = HomePageInformation.objects.filter(tab_type='Downloads')
-        publications_qs = HomePageInformation.objects.filter(tab_type='Publications')
-
-        instructions = InstructionsSerializer(instructions_qs, many=True).data
-        offline = OfflineSerializer(offline_qs, many=True).data
-        downloads = DownloadsSerializer(downloads_qs, many=True).data
-        publications = PublicationsSerializer(publications_qs, many=True).data
-
-        return Response({
-            "instructions": instructions,
-            "offline": offline,
-            "downloads": downloads,
-            "publications": publications
-        })
+    def post(self, request):
+        tab_type = request.data.get('tab_type')
+        if not tab_type:
+            return Response({"error": "tab_type is required"}, status=status.HTTP_400_BAD_REQUEST)
+        queryset = HomePageInformation.objects.filter(tab_type=tab_type)
+        if tab_type == 'Instructions':
+            serializer = InstructionsSerializer(queryset, many=True)
+        elif tab_type == 'CMMS Offline':
+            serializer = OfflineSerializer(queryset, many=True)
+        elif tab_type == 'Downloads':
+            serializer = DownloadsSerializer(queryset, many=True)
+        elif tab_type == 'Publications':
+            serializer = PublicationsSerializer(queryset, many=True)
+        else:
+            return Response({"error": "Invalid tab_type"}, status=status.HTTP_400_BAD_REQUEST)
+        return Response(serializer.data)

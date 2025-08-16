@@ -192,11 +192,9 @@ class HomePageInformation(models.Model):
     tab_type = models.CharField(max_length=20, choices=TAB_CHOICES)
     title = models.CharField(max_length=255, blank=True, null=True)
     content = models.TextField(blank=True, null=True)
-    file_name = models.CharField(max_length=255, blank=True, null=True)
-    file_url = models.URLField(blank=True, null=True)
 
     class Meta:
         db_table = 'information_home_page'
 
     def __str__(self):
-        return f"{self.tab_type}: {self.title or self.file_name}"
+        return f"{self.tab_type}: {self.title }"
