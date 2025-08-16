@@ -606,3 +606,14 @@ INFO 2025-08-16 14:23:32,957 views 40224 41012 User signup successful: ID 4, Pro
 WARNING 2025-08-16 14:23:32,958 middleware 40224 41012 Slow request: POST /api/v1/auth/signup/ took 1.09s
 INFO 2025-08-16 14:23:32,959 basehttp 40224 41012 "POST /api/v1/auth/signup/ HTTP/1.1" 201 373
 INFO 2025-08-16 14:49:42,541 basehttp 40224 11936 "GET /api/v1/auth/home/ HTTP/1.1" 200 1721
+INFO 2025-08-16 15:24:25,132 serializers 40224 4276 Successful login for user ID: 2
+INFO 2025-08-16 15:24:25,669 views 40224 4276 User ID 2 logged in successfully from IP: 127.0.0.1
+WARNING 2025-08-16 15:24:25,690 middleware 40224 4276 Slow request: POST /api/v1/auth/login/ took 1.43s
+INFO 2025-08-16 15:24:25,691 basehttp 40224 4276 "POST /api/v1/auth/login/ HTTP/1.1" 200 776
+ERROR 2025-08-16 15:25:08,979 views 40224 4276 Unexpected error during logout: 'RefreshToken' object has no attribute 'blacklist'
+ERROR 2025-08-16 15:25:08,986 log 40224 4276 Internal Server Error: /api/v1/auth/logout/
+ERROR 2025-08-16 15:25:08,987 basehttp 40224 4276 "POST /api/v1/auth/logout/ HTTP/1.1" 500 127
+INFO 2025-08-16 15:25:59,796 autoreload 40224 35292 D:\INSMA_POC\POC4\services\auth_service\backend\config\settings.py changed, reloading.
+INFO 2025-08-16 15:28:33,520 autoreload 42244 25488 Watching for file changes with StatReloader
+INFO 2025-08-16 15:28:40,005 views 42244 32344 User ID 2 logged out successfully
+INFO 2025-08-16 15:28:40,005 basehttp 42244 32344 "POST /api/v1/auth/logout/ HTTP/1.1" 200 46
