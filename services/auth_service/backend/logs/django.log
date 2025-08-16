@@ -1,0 +1,608 @@
+INFO 2025-08-15 13:37:20,995 autoreload 8888 36788 Watching for file changes with StatReloader
+INFO 2025-08-15 13:38:46,197 autoreload 21328 23092 Watching for file changes with StatReloader
+INFO 2025-08-15 13:42:34,951 autoreload 21456 29000 Watching for file changes with StatReloader
+INFO 2025-08-15 13:47:26,006 autoreload 35568 34540 Watching for file changes with StatReloader
+INFO 2025-08-15 13:48:40,116 autoreload 33908 28916 Watching for file changes with StatReloader
+INFO 2025-08-15 18:04:28,211 autoreload 24384 17224 Watching for file changes with StatReloader
+WARNING 2025-08-15 18:07:09,669 log 24384 41512 Not Found: /auth/signup/
+WARNING 2025-08-15 18:07:09,670 basehttp 24384 41512 "POST /auth/signup/ HTTP/1.1" 404 3031
+INFO 2025-08-15 18:08:24,914 basehttp 24384 27964 code 400, message Bad request version ('êê\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06szz\x00\x00\x00')
+ERROR 2025-08-15 18:08:24,915 basehttp 24384 27964 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-08-15 18:08:24,917 basehttp 24384 14328 code 400, message Bad request version ("\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00#\x00\x00\x003\x04ï\x04íÚÚ\x00\x01\x00\x11ì\x04ÀBD\xadþË/\x1aöTT'q\x8as\x809ëO:*·zÊ\x95í\x8arä`\xad")
+ERROR 2025-08-15 18:08:24,917 basehttp 24384 14328 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-08-15 18:08:29,378 basehttp 24384 35560 code 400, message Bad request version ('\x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06S')
+ERROR 2025-08-15 18:08:29,378 basehttp 24384 35560 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-08-15 18:08:29,380 basehttp 24384 24644 code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+ERROR 2025-08-15 18:08:29,380 basehttp 24384 24644 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-08-15 18:08:29,388 basehttp 24384 25556 code 400, message Bad request version ('i°')
+ERROR 2025-08-15 18:08:29,388 basehttp 24384 25556 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-08-15 18:08:29,388 basehttp 24384 33728 code 400, message Bad request version ('°&9')
+ERROR 2025-08-15 18:08:29,388 basehttp 24384 33728 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-08-15 18:08:29,392 basehttp 24384 30020 code 400, message Bad request version ('úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06sZZ\x00\x00\x00\x17\x00\x00\x00')
+INFO 2025-08-15 18:08:29,392 basehttp 24384 2880 code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00#\x00\x00\x00')
+ERROR 2025-08-15 18:08:29,392 basehttp 24384 30020 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2025-08-15 18:08:29,392 basehttp 24384 2880 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2025-08-15 18:11:28,184 log 24384 21588 Internal Server Error: /api/v1/auth/signup/
+Traceback (most recent call last):
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\connection.py", line 1526, in get_connection
+    connection = self._available_connections.pop()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: pop from empty list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\views.py", line 422, in initial
+    self.check_throttles(request)
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\views.py", line 365, in check_throttles
+    if not throttle.allow_request(request, self):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\throttling.py", line 123, in allow_request
+    self.history = self.cache.get(self.key, [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\django\core\cache\backends\redis.py", line 188, in get
+    return self._cache.get(key, default)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\django\core\cache\backends\redis.py", line 100, in get
+    value = client.get(key)
+            ^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\commands\core.py", line 1829, in get
+    return self.execute_command("GET", name, keys=[name])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\client.py", line 621, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\client.py", line 627, in _execute_command
+    conn = self.connection or pool.get_connection()
+                              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\utils.py", line 195, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\connection.py", line 1528, in get_connection
+    connection = self.make_connection()
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\connection.py", line 1574, in make_connection
+    return self.connection_class(**self.connection_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\connection.py", line 753, in __init__
+    super().__init__(**kwargs)
+TypeError: AbstractConnection.__init__() got an unexpected keyword argument 'CLIENT_CLASS'
+ERROR 2025-08-15 18:11:28,201 basehttp 24384 21588 "POST /api/v1/auth/signup/ HTTP/1.1" 500 152011
+INFO 2025-08-15 18:11:39,264 basehttp 24384 35072 code 400, message Bad request version ('À\x13À')
+ERROR 2025-08-15 18:11:39,266 basehttp 24384 35072 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2025-08-15 18:11:47,029 log 24384 21588 Internal Server Error: /api/v1/auth/signup/
+Traceback (most recent call last):
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\connection.py", line 1526, in get_connection
+    connection = self._available_connections.pop()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: pop from empty list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\views.py", line 422, in initial
+    self.check_throttles(request)
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\views.py", line 365, in check_throttles
+    if not throttle.allow_request(request, self):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\throttling.py", line 123, in allow_request
+    self.history = self.cache.get(self.key, [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\django\core\cache\backends\redis.py", line 188, in get
+    return self._cache.get(key, default)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\django\core\cache\backends\redis.py", line 100, in get
+    value = client.get(key)
+            ^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\commands\core.py", line 1829, in get
+    return self.execute_command("GET", name, keys=[name])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\client.py", line 621, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\client.py", line 627, in _execute_command
+    conn = self.connection or pool.get_connection()
+                              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\utils.py", line 195, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\connection.py", line 1528, in get_connection
+    connection = self.make_connection()
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\connection.py", line 1574, in make_connection
+    return self.connection_class(**self.connection_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\connection.py", line 753, in __init__
+    super().__init__(**kwargs)
+TypeError: AbstractConnection.__init__() got an unexpected keyword argument 'CLIENT_CLASS'
+ERROR 2025-08-15 18:11:47,032 basehttp 24384 21588 "POST /api/v1/auth/signup/ HTTP/1.1" 500 152011
+WARNING 2025-08-15 18:13:03,241 log 24384 41668 Not Found: /api/v1/auth/
+WARNING 2025-08-15 18:13:03,241 basehttp 24384 41668 "POST /api/v1/auth/ HTTP/1.1" 404 4225
+INFO 2025-08-15 18:13:09,419 middleware 24384 41668 API request: POST /api/auth/ from IP: 127.0.0.1
+WARNING 2025-08-15 18:13:09,425 log 24384 41668 Not Found: /api/auth/
+WARNING 2025-08-15 18:13:09,426 basehttp 24384 41668 "POST /api/auth/ HTTP/1.1" 404 3022
+INFO 2025-08-15 18:15:57,185 autoreload 24384 17224 D:\INSMA_POC\POC4\services\auth_service\backend\config\settings.py changed, reloading.
+INFO 2025-08-15 18:16:01,402 autoreload 35820 3916 Watching for file changes with StatReloader
+INFO 2025-08-15 18:16:09,750 autoreload 35820 3916 D:\INSMA_POC\POC4\services\auth_service\backend\config\settings.py changed, reloading.
+INFO 2025-08-15 18:16:11,332 autoreload 37540 6260 Watching for file changes with StatReloader
+INFO 2025-08-15 18:16:16,033 autoreload 37540 6260 D:\INSMA_POC\POC4\services\auth_service\backend\config\settings.py changed, reloading.
+INFO 2025-08-15 18:16:17,578 autoreload 33256 36776 Watching for file changes with StatReloader
+INFO 2025-08-15 18:16:22,176 basehttp 33256 35268 code 400, message Bad request version ("õ+\x90'cÌSõÄ¶wÁ7¥\x8c?\x96\x14¸÷\x9c¶Ì")
+ERROR 2025-08-15 18:16:22,177 basehttp 33256 35268 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-08-15 18:16:22,180 basehttp 33256 29076 code 400, message Bad request version ('\x10ô45-)ÁÚª!')
+ERROR 2025-08-15 18:16:22,180 basehttp 33256 29076 You're accessing the development server over HTTPS, but it only supports HTTP.
+ERROR 2025-08-15 18:16:32,070 log 33256 30332 Internal Server Error: /api/v1/auth/signup/
+Traceback (most recent call last):
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\connection.py", line 1526, in get_connection
+    connection = self._available_connections.pop()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: pop from empty list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\views.py", line 422, in initial
+    self.check_throttles(request)
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\views.py", line 365, in check_throttles
+    if not throttle.allow_request(request, self):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\throttling.py", line 123, in allow_request
+    self.history = self.cache.get(self.key, [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\django\core\cache\backends\redis.py", line 188, in get
+    return self._cache.get(key, default)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\django\core\cache\backends\redis.py", line 100, in get
+    value = client.get(key)
+            ^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\commands\core.py", line 1829, in get
+    return self.execute_command("GET", name, keys=[name])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\client.py", line 621, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\client.py", line 627, in _execute_command
+    conn = self.connection or pool.get_connection()
+                              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\utils.py", line 195, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\connection.py", line 1528, in get_connection
+    connection = self.make_connection()
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\connection.py", line 1574, in make_connection
+    return self.connection_class(**self.connection_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\connection.py", line 753, in __init__
+    super().__init__(**kwargs)
+TypeError: AbstractConnection.__init__() got an unexpected keyword argument 'CLIENT_CLASS'
+ERROR 2025-08-15 18:16:32,088 basehttp 33256 30332 "POST /api/v1/auth/signup/ HTTP/1.1" 500 152011
+WARNING 2025-08-15 18:16:42,010 log 33256 30332 Not Found: /auth/signup/
+WARNING 2025-08-15 18:16:42,010 basehttp 33256 30332 "POST /auth/signup/ HTTP/1.1" 404 3031
+WARNING 2025-08-15 18:21:09,029 log 33256 33812 Not Found: /auth/signup/
+WARNING 2025-08-15 18:21:09,029 basehttp 33256 33812 "POST /auth/signup/ HTTP/1.1" 404 3031
+ERROR 2025-08-15 18:35:34,670 log 33256 23320 Internal Server Error: /api/v1/auth/signup/
+Traceback (most recent call last):
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\connection.py", line 1526, in get_connection
+    connection = self._available_connections.pop()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: pop from empty list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\views.py", line 422, in initial
+    self.check_throttles(request)
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\views.py", line 365, in check_throttles
+    if not throttle.allow_request(request, self):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\throttling.py", line 123, in allow_request
+    self.history = self.cache.get(self.key, [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\django\core\cache\backends\redis.py", line 188, in get
+    return self._cache.get(key, default)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\django\core\cache\backends\redis.py", line 100, in get
+    value = client.get(key)
+            ^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\commands\core.py", line 1829, in get
+    return self.execute_command("GET", name, keys=[name])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\client.py", line 621, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\client.py", line 627, in _execute_command
+    conn = self.connection or pool.get_connection()
+                              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\utils.py", line 195, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\connection.py", line 1528, in get_connection
+    connection = self.make_connection()
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\connection.py", line 1574, in make_connection
+    return self.connection_class(**self.connection_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\connection.py", line 753, in __init__
+    super().__init__(**kwargs)
+TypeError: AbstractConnection.__init__() got an unexpected keyword argument 'CLIENT_CLASS'
+ERROR 2025-08-15 18:35:34,673 basehttp 33256 23320 "POST /api/v1/auth/signup/ HTTP/1.1" 500 152011
+INFO 2025-08-15 18:36:15,543 autoreload 33256 36776 D:\INSMA_POC\POC4\services\auth_service\backend\config\settings.py changed, reloading.
+INFO 2025-08-15 18:36:25,406 autoreload 14960 26484 Watching for file changes with StatReloader
+ERROR 2025-08-15 18:36:38,079 log 14960 2024 Internal Server Error: /api/v1/auth/signup/
+Traceback (most recent call last):
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\connection.py", line 389, in connect_check_health
+    sock = self.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\retry.py", line 105, in call_with_retry
+    return do()
+           ^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\connection.py", line 390, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+            ^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\connection.py", line 803, in _connect
+    raise err
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\connection.py", line 787, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\views.py", line 422, in initial
+    self.check_throttles(request)
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\views.py", line 365, in check_throttles
+    if not throttle.allow_request(request, self):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\throttling.py", line 123, in allow_request
+    self.history = self.cache.get(self.key, [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\django\core\cache\backends\redis.py", line 188, in get
+    return self._cache.get(key, default)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\django\core\cache\backends\redis.py", line 100, in get
+    value = client.get(key)
+            ^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\commands\core.py", line 1829, in get
+    return self.execute_command("GET", name, keys=[name])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\client.py", line 621, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\client.py", line 627, in _execute_command
+    conn = self.connection or pool.get_connection()
+                              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\utils.py", line 195, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\connection.py", line 1533, in get_connection
+    connection.connect()
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\connection.py", line 380, in connect
+    self.connect_check_health(check_health=True)
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\connection.py", line 397, in connect_check_health
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+WARNING 2025-08-15 18:36:38,100 middleware 14960 2024 Slow request: POST /api/v1/auth/signup/ took 4.67s
+ERROR 2025-08-15 18:36:38,102 basehttp 14960 2024 "POST /api/v1/auth/signup/ HTTP/1.1" 500 169441
+ERROR 2025-08-15 18:37:08,593 log 14960 2024 Internal Server Error: /api/v1/auth/signup/
+Traceback (most recent call last):
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\connection.py", line 389, in connect_check_health
+    sock = self.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\retry.py", line 105, in call_with_retry
+    return do()
+           ^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\connection.py", line 390, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+            ^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\connection.py", line 803, in _connect
+    raise err
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\connection.py", line 787, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\views.py", line 422, in initial
+    self.check_throttles(request)
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\views.py", line 365, in check_throttles
+    if not throttle.allow_request(request, self):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\rest_framework\throttling.py", line 123, in allow_request
+    self.history = self.cache.get(self.key, [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\django\core\cache\backends\redis.py", line 188, in get
+    return self._cache.get(key, default)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\django\core\cache\backends\redis.py", line 100, in get
+    value = client.get(key)
+            ^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\commands\core.py", line 1829, in get
+    return self.execute_command("GET", name, keys=[name])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\client.py", line 621, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\client.py", line 627, in _execute_command
+    conn = self.connection or pool.get_connection()
+                              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\utils.py", line 195, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\connection.py", line 1533, in get_connection
+    connection.connect()
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\connection.py", line 380, in connect
+    self.connect_check_health(check_health=True)
+  File "D:\INSMA_POC\venv_POC2\Lib\site-packages\redis\connection.py", line 397, in connect_check_health
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+WARNING 2025-08-15 18:37:08,596 middleware 14960 2024 Slow request: POST /api/v1/auth/signup/ took 4.17s
+ERROR 2025-08-15 18:37:08,596 basehttp 14960 2024 "POST /api/v1/auth/signup/ HTTP/1.1" 500 169441
+INFO 2025-08-15 18:46:50,201 autoreload 36152 15796 Watching for file changes with StatReloader
+INFO 2025-08-15 18:47:24,487 autoreload 36152 15796 D:\INSMA_POC\POC4\services\auth_service\backend\config\settings.py changed, reloading.
+INFO 2025-08-15 18:47:26,300 autoreload 30676 41736 Watching for file changes with StatReloader
+INFO 2025-08-15 18:47:29,166 autoreload 30676 41736 D:\INSMA_POC\POC4\services\auth_service\backend\config\settings.py changed, reloading.
+INFO 2025-08-15 18:47:30,974 autoreload 21876 27812 Watching for file changes with StatReloader
+INFO 2025-08-15 18:47:36,938 autoreload 37712 26240 Watching for file changes with StatReloader
+INFO 2025-08-15 18:47:45,066 views 37712 6524 User signup attempt from IP: 127.0.0.1
+ERROR 2025-08-15 18:47:45,580 views 37712 6524 Unexpected error during signup from IP 127.0.0.1: no such table: user_profiles
+ERROR 2025-08-15 18:47:45,584 log 37712 6524 Internal Server Error: /api/v1/auth/signup/
+ERROR 2025-08-15 18:47:45,585 basehttp 37712 6524 "POST /api/v1/auth/signup/ HTTP/1.1" 500 132
+INFO 2025-08-15 18:58:02,875 autoreload 37168 39788 Watching for file changes with StatReloader
+INFO 2025-08-15 18:58:08,517 views 37168 33500 User signup attempt from IP: 127.0.0.1
+ERROR 2025-08-15 18:58:09,071 views 37168 33500 Unexpected error during signup from IP 127.0.0.1: no such table: user_profiles
+ERROR 2025-08-15 18:58:09,073 log 37168 33500 Internal Server Error: /api/v1/auth/signup/
+ERROR 2025-08-15 18:58:09,074 basehttp 37168 33500 "POST /api/v1/auth/signup/ HTTP/1.1" 500 132
+INFO 2025-08-15 18:59:40,867 views 37168 17480 User signup attempt from IP: 127.0.0.1
+ERROR 2025-08-15 18:59:41,655 views 37168 17480 Unexpected error during signup from IP 127.0.0.1: no such table: user_profiles
+ERROR 2025-08-15 18:59:41,656 log 37168 17480 Internal Server Error: /api/v1/auth/signup/
+ERROR 2025-08-15 18:59:41,657 basehttp 37168 17480 "POST /api/v1/auth/signup/ HTTP/1.1" 500 132
+INFO 2025-08-15 19:11:01,043 autoreload 37168 39788 D:\INSMA_POC\POC4\services\auth_service\backend\config\settings.py changed, reloading.
+INFO 2025-08-15 19:11:02,918 autoreload 19852 33296 Watching for file changes with StatReloader
+INFO 2025-08-15 19:11:09,081 views 19852 39200 User signup attempt from IP: 127.0.0.1
+ERROR 2025-08-15 19:11:09,296 views 19852 39200 Unexpected error during signup from IP 127.0.0.1: relation "auth_user" does not exist
+LINE 1: SELECT 1 AS "a" FROM "auth_user" WHERE "auth_user"."username...
+                             ^
+
+ERROR 2025-08-15 19:11:09,300 log 19852 39200 Internal Server Error: /api/v1/auth/signup/
+ERROR 2025-08-15 19:11:09,300 basehttp 19852 39200 "POST /api/v1/auth/signup/ HTTP/1.1" 500 132
+INFO 2025-08-15 19:13:16,003 autoreload 11896 32872 Watching for file changes with StatReloader
+INFO 2025-08-15 19:14:56,044 views 11896 4748 User signup attempt from IP: 127.0.0.1
+ERROR 2025-08-15 19:14:56,695 views 11896 4748 Unexpected error during signup from IP 127.0.0.1: column "user_id" of relation "user_profiles" does not exist
+LINE 1: INSERT INTO "user_profiles" ("id", "user_id", "rank", "unitn...
+                                           ^
+
+ERROR 2025-08-15 19:14:56,698 log 11896 4748 Internal Server Error: /api/v1/auth/signup/
+ERROR 2025-08-15 19:14:56,699 basehttp 11896 4748 "POST /api/v1/auth/signup/ HTTP/1.1" 500 132
+INFO 2025-08-15 19:28:42,812 autoreload 13708 29372 Watching for file changes with StatReloader
+INFO 2025-08-15 19:28:48,923 views 13708 41488 User signup attempt from IP: 127.0.0.1
+INFO 2025-08-15 19:28:49,960 serializers 13708 41488 New user created: ID 2, Profile: aab33460-0a4d-4dc8-bb71-67cb25bbe894
+INFO 2025-08-15 19:28:49,968 views 13708 41488 User signup successful: ID 2, Profile: aab33460-0a4d-4dc8-bb71-67cb25bbe894 from IP: 127.0.0.1
+WARNING 2025-08-15 19:28:49,969 middleware 13708 41488 Slow request: POST /api/v1/auth/signup/ took 1.05s
+INFO 2025-08-15 19:28:49,970 basehttp 13708 41488 "POST /api/v1/auth/signup/ HTTP/1.1" 201 371
+INFO 2025-08-15 19:30:27,858 views 13708 26752 User signup attempt from IP: 127.0.0.1
+WARNING 2025-08-15 19:30:28,088 views 13708 26752 Signup validation failed from IP 127.0.0.1
+WARNING 2025-08-15 19:30:28,091 log 13708 26752 Bad Request: /api/v1/auth/signup/
+WARNING 2025-08-15 19:30:28,092 basehttp 13708 26752 "POST /api/v1/auth/signup/ HTTP/1.1" 400 133
+INFO 2025-08-15 19:30:42,934 views 13708 26752 User signup attempt from IP: 127.0.0.1
+INFO 2025-08-15 19:30:43,581 serializers 13708 26752 New user created: ID 3, Profile: 075a6c4d-f323-4253-a4f1-613db8659c2f
+INFO 2025-08-15 19:30:43,588 views 13708 26752 User signup successful: ID 3, Profile: 075a6c4d-f323-4253-a4f1-613db8659c2f from IP: 127.0.0.1
+INFO 2025-08-15 19:30:43,590 basehttp 13708 26752 "POST /api/v1/auth/signup/ HTTP/1.1" 201 377
+WARNING 2025-08-15 19:31:16,999 log 13708 38504 Not Found: /api/v1auth/login/
+WARNING 2025-08-15 19:31:16,999 basehttp 13708 38504 "POST /api/v1auth/login/ HTTP/1.1" 404 3046
+INFO 2025-08-15 19:31:43,321 serializers 13708 38504 Successful login for user ID: 2
+INFO 2025-08-15 19:31:43,711 views 13708 38504 User ID 2 logged in successfully from IP: 127.0.0.1
+WARNING 2025-08-15 19:31:43,720 middleware 13708 38504 Slow request: POST /api/v1/auth/login/ took 1.40s
+INFO 2025-08-15 19:31:43,721 basehttp 13708 38504 "POST /api/v1/auth/login/ HTTP/1.1" 200 776
+WARNING 2025-08-15 19:32:14,807 log 13708 38504 Not Found: /auth/logout/
+WARNING 2025-08-15 19:32:14,807 basehttp 13708 38504 "POST /auth/logout/ HTTP/1.1" 404 3031
+WARNING 2025-08-15 19:32:28,173 log 13708 38504 Unauthorized: /api/v1/auth/logout/
+WARNING 2025-08-15 19:32:28,173 basehttp 13708 38504 "POST /api/v1/auth/logout/ HTTP/1.1" 401 176
+INFO 2025-08-15 19:32:38,940 serializers 13708 38504 Successful login for user ID: 2
+INFO 2025-08-15 19:32:38,948 views 13708 38504 User ID 2 logged in successfully from IP: 127.0.0.1
+INFO 2025-08-15 19:32:38,950 basehttp 13708 38504 "POST /api/v1/auth/login/ HTTP/1.1" 200 776
+WARNING 2025-08-15 19:32:52,696 log 13708 38504 Unauthorized: /api/v1/auth/logout/
+WARNING 2025-08-15 19:32:52,697 basehttp 13708 38504 "POST /api/v1/auth/logout/ HTTP/1.1" 401 176
+WARNING 2025-08-15 19:35:50,185 log 13708 29300 Bad Request: /api/v1/auth/logout/
+WARNING 2025-08-15 19:35:50,186 basehttp 13708 29300 "POST /api/v1/auth/logout/ HTTP/1.1" 400 127
+ERROR 2025-08-15 19:37:23,562 views 13708 40976 Unexpected error during logout: 'RefreshToken' object has no attribute 'blacklist'
+ERROR 2025-08-15 19:37:23,566 log 13708 40976 Internal Server Error: /api/v1/auth/logout/
+ERROR 2025-08-15 19:37:23,567 basehttp 13708 40976 "POST /api/v1/auth/logout/ HTTP/1.1" 500 127
+INFO 2025-08-16 10:28:48,000 serializers 13708 30528 Successful login for user ID: 2
+INFO 2025-08-16 10:28:48,058 views 13708 30528 User ID 2 logged in successfully from IP: 127.0.0.1
+INFO 2025-08-16 10:28:48,060 basehttp 13708 30528 "POST /api/v1/auth/login/ HTTP/1.1" 200 776
+INFO 2025-08-16 10:29:37,675 views 13708 30528 User ID 2 accessed profile
+INFO 2025-08-16 10:29:37,675 basehttp 13708 30528 "GET /api/v1/auth/profile/ HTTP/1.1" 200 333
+INFO 2025-08-16 13:24:26,023 autoreload 13708 29372 D:\INSMA_POC\POC4\services\auth_service\backend\apps\users\models.py changed, reloading.
+INFO 2025-08-16 13:24:31,017 autoreload 32576 39864 Watching for file changes with StatReloader
+INFO 2025-08-16 13:25:02,918 autoreload 32576 39864 D:\INSMA_POC\POC4\services\auth_service\backend\apps\users\serializers.py changed, reloading.
+INFO 2025-08-16 13:25:04,997 autoreload 35692 34360 Watching for file changes with StatReloader
+INFO 2025-08-16 13:25:35,846 autoreload 35692 34360 D:\INSMA_POC\POC4\services\auth_service\backend\apps\users\serializers.py changed, reloading.
+INFO 2025-08-16 13:25:37,836 autoreload 42056 41512 Watching for file changes with StatReloader
+INFO 2025-08-16 13:27:00,570 autoreload 42056 41512 D:\INSMA_POC\POC4\services\auth_service\backend\apps\users\views.py changed, reloading.
+INFO 2025-08-16 13:27:02,564 autoreload 7812 37300 Watching for file changes with StatReloader
+INFO 2025-08-16 13:27:32,375 autoreload 7812 37300 D:\INSMA_POC\POC4\services\auth_service\backend\apps\users\views.py changed, reloading.
+INFO 2025-08-16 13:27:33,917 autoreload 39728 38820 Watching for file changes with StatReloader
+INFO 2025-08-16 13:27:38,064 autoreload 39728 38820 D:\INSMA_POC\POC4\services\auth_service\backend\apps\users\views.py changed, reloading.
+INFO 2025-08-16 13:27:39,758 autoreload 32264 36792 Watching for file changes with StatReloader
+INFO 2025-08-16 13:28:03,243 autoreload 32264 36792 D:\INSMA_POC\POC4\services\auth_service\backend\apps\users\views.py changed, reloading.
+INFO 2025-08-16 13:28:05,863 autoreload 19152 38964 Watching for file changes with StatReloader
+INFO 2025-08-16 13:28:21,042 autoreload 19152 38964 D:\INSMA_POC\POC4\services\auth_service\backend\apps\users\urls.py changed, reloading.
+INFO 2025-08-16 13:28:22,808 autoreload 21412 27528 Watching for file changes with StatReloader
+INFO 2025-08-16 13:28:29,592 autoreload 21412 27528 D:\INSMA_POC\POC4\services\auth_service\backend\apps\users\urls.py changed, reloading.
+INFO 2025-08-16 13:28:31,156 autoreload 30968 10876 Watching for file changes with StatReloader
+INFO 2025-08-16 13:28:45,190 autoreload 30968 10876 D:\INSMA_POC\POC4\services\auth_service\backend\apps\users\urls.py changed, reloading.
+INFO 2025-08-16 13:28:47,398 autoreload 40360 31304 Watching for file changes with StatReloader
+INFO 2025-08-16 13:28:51,587 autoreload 40360 31304 D:\INSMA_POC\POC4\services\auth_service\backend\apps\users\urls.py changed, reloading.
+INFO 2025-08-16 13:28:53,674 autoreload 41864 21056 Watching for file changes with StatReloader
+INFO 2025-08-16 13:29:00,072 autoreload 41864 21056 D:\INSMA_POC\POC4\services\auth_service\backend\apps\users\urls.py changed, reloading.
+INFO 2025-08-16 13:29:01,531 autoreload 34888 25356 Watching for file changes with StatReloader
+INFO 2025-08-16 13:29:08,974 autoreload 34888 25356 D:\INSMA_POC\POC4\services\auth_service\backend\apps\users\urls.py changed, reloading.
+INFO 2025-08-16 13:29:10,905 autoreload 40324 7952 Watching for file changes with StatReloader
+INFO 2025-08-16 13:29:20,667 autoreload 40324 7952 D:\INSMA_POC\POC4\services\auth_service\backend\apps\users\urls.py changed, reloading.
+INFO 2025-08-16 13:29:22,538 autoreload 37448 42992 Watching for file changes with StatReloader
+INFO 2025-08-16 13:29:29,038 autoreload 37448 42992 D:\INSMA_POC\POC4\services\auth_service\backend\apps\users\urls.py changed, reloading.
+INFO 2025-08-16 13:29:30,499 autoreload 29528 21292 Watching for file changes with StatReloader
+INFO 2025-08-16 13:30:36,091 autoreload 2904 13060 Watching for file changes with StatReloader
+INFO 2025-08-16 13:36:59,930 basehttp 2904 36792 "GET /api/v1/auth/home/ HTTP/1.1" 200 65
+WARNING 2025-08-16 13:42:18,974 log 2904 13708 Method Not Allowed: /api/v1/auth/home/
+WARNING 2025-08-16 13:42:18,975 basehttp 2904 13708 "POST /api/v1/auth/home/ HTTP/1.1" 405 41
+INFO 2025-08-16 13:42:25,449 basehttp 2904 13708 "GET /api/v1/auth/home/ HTTP/1.1" 200 65
+INFO 2025-08-16 13:44:51,849 autoreload 2904 13060 D:\INSMA_POC\POC4\services\auth_service\backend\apps\users\serializers.py changed, reloading.
+INFO 2025-08-16 13:44:54,258 autoreload 26752 28144 Watching for file changes with StatReloader
+INFO 2025-08-16 13:44:58,510 autoreload 26752 28144 D:\INSMA_POC\POC4\services\auth_service\backend\apps\users\serializers.py changed, reloading.
+INFO 2025-08-16 13:45:00,418 autoreload 36672 15284 Watching for file changes with StatReloader
+INFO 2025-08-16 13:45:29,083 autoreload 36672 15284 D:\INSMA_POC\POC4\services\auth_service\backend\apps\users\views.py changed, reloading.
+INFO 2025-08-16 13:45:31,206 autoreload 41512 24876 Watching for file changes with StatReloader
+INFO 2025-08-16 13:45:38,654 autoreload 41512 24876 D:\INSMA_POC\POC4\services\auth_service\backend\apps\users\views.py changed, reloading.
+INFO 2025-08-16 13:45:40,160 autoreload 31816 30700 Watching for file changes with StatReloader
+INFO 2025-08-16 13:45:43,813 autoreload 31816 30700 D:\INSMA_POC\POC4\services\auth_service\backend\apps\users\views.py changed, reloading.
+INFO 2025-08-16 13:45:45,260 autoreload 40108 38292 Watching for file changes with StatReloader
+INFO 2025-08-16 13:45:47,411 autoreload 40108 38292 D:\INSMA_POC\POC4\services\auth_service\backend\apps\users\views.py changed, reloading.
+INFO 2025-08-16 13:45:49,223 autoreload 4748 8868 Watching for file changes with StatReloader
+INFO 2025-08-16 13:45:51,158 autoreload 4748 8868 D:\INSMA_POC\POC4\services\auth_service\backend\apps\users\views.py changed, reloading.
+INFO 2025-08-16 13:45:52,622 autoreload 20020 5884 Watching for file changes with StatReloader
+INFO 2025-08-16 13:46:24,617 autoreload 20020 5884 D:\INSMA_POC\POC4\services\auth_service\backend\apps\users\views.py changed, reloading.
+INFO 2025-08-16 13:46:26,508 autoreload 2796 34660 Watching for file changes with StatReloader
+INFO 2025-08-16 13:46:49,792 autoreload 23208 41000 Watching for file changes with StatReloader
+INFO 2025-08-16 13:46:56,746 basehttp 23208 39192 "GET /api/v1/auth/home/ HTTP/1.1" 200 65
+INFO 2025-08-16 13:51:17,256 autoreload 23208 41000 D:\INSMA_POC\POC4\services\auth_service\backend\apps\users\views.py changed, reloading.
+INFO 2025-08-16 13:51:19,251 autoreload 40772 41864 Watching for file changes with StatReloader
+INFO 2025-08-16 13:51:22,519 autoreload 40772 41864 D:\INSMA_POC\POC4\services\auth_service\backend\apps\users\views.py changed, reloading.
+INFO 2025-08-16 13:51:24,114 autoreload 26652 35640 Watching for file changes with StatReloader
+INFO 2025-08-16 13:51:26,826 autoreload 26652 35640 D:\INSMA_POC\POC4\services\auth_service\backend\apps\users\views.py changed, reloading.
+INFO 2025-08-16 13:51:28,380 autoreload 40224 35292 Watching for file changes with StatReloader
+INFO 2025-08-16 13:52:29,291 basehttp 40224 30016 "GET /api/v1/auth/home/ HTTP/1.1" 200 1721
+INFO 2025-08-16 14:23:31,878 views 40224 41012 User signup attempt from IP: 127.0.0.1
+INFO 2025-08-16 14:23:32,952 serializers 40224 41012 New user created: ID 4, Profile: aa00816a-f033-4cc1-ba9a-56bcf5a02276
+INFO 2025-08-16 14:23:32,957 views 40224 41012 User signup successful: ID 4, Profile: aa00816a-f033-4cc1-ba9a-56bcf5a02276 from IP: 127.0.0.1
+WARNING 2025-08-16 14:23:32,958 middleware 40224 41012 Slow request: POST /api/v1/auth/signup/ took 1.09s
+INFO 2025-08-16 14:23:32,959 basehttp 40224 41012 "POST /api/v1/auth/signup/ HTTP/1.1" 201 373
+INFO 2025-08-16 14:49:42,541 basehttp 40224 11936 "GET /api/v1/auth/home/ HTTP/1.1" 200 1721

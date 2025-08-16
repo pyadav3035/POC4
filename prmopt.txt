@@ -1,0 +1,74 @@
+Create a microservices-based full-stack web application with the following specifications:
+
+Frontend Service:
+- Angular 20
+- Responsive UI
+- Communicates with backend services via REST API
+- Hosted as a separate container/service
+- Uses environment variables for API base URL
+
+Backend Service:
+- Python 3.12
+- Django 5.0
+- Django REST Framework (DRF) 3.16.x
+- Exposes CRUD API endpoints at /api/
+- Configured for CORS to allow requests from Angular frontend
+- Follows microservice principles (each backend service handles a specific domain of the application)
+- Use environment variables for database and service configuration
+
+Database Service:
+- PostgreSQL 18
+- Separate container in docker-compose
+- Backend connects using credentials from environment variables
+
+DevOps:
+- Include Dockerfile for each service
+- Include docker-compose.yml to orchestrate all services
+- Provide environment variable configuration (.env files)
+- Include README.md with detailed setup and deployment instructions
+
+Architecture:
+- Each service (frontend, backend, database) runs in its own container
+- Backend should follow modular structure to allow scaling by adding more microservices
+- Communication between services only through REST APIs or gRPC (if needed)
+
+
+Extra:
+- Ensure production build serves Angular static files either via CDN or reverse proxy (Nginx) in a separate container
+- Codebase organized in separate folders for each microservice
+
+Follow the below architecture
+
+
+project-root/
+│
+├── frontend/                       # Angular app
+│   ├── src/
+│   ├── angular.json
+│   └── package.json
+│
+├── services/
+│   ├── auth_service/                # Django REST microservice for auth
+│   │   ├── backend/
+│   │   │   ├── config/
+│   │   │   ├── apps/users/
+│   │   │   ├── manage.py
+│   │   │   └── requirements.txt
+│   │   ├── Dockerfile
+│   │   └── .env
+│   │
+│   ├── SFD/           # Another Django REST microservice
+│   │   ├── backend/
+│   │   │   ├── config/
+│   │   │   ├── apps/inventory/
+│   │   │   ├── manage.py
+│   │   │   └── requirements.txt
+│   │   ├── Dockerfile
+│   │   └── .env
+│
+├── gateway/
+│   ├── nginx.conf                   # Routes frontend & backend APIs
+│   └── Dockerfile
+│
+├── docker-compose.yml
+└── README.md
