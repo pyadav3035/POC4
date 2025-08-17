@@ -1,0 +1,35 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.pyc
+
+# Virtual environment
+venv/
+.env/
+.venv/
+
+# Django stuff
+*.log
+db.sqlite3
+media/
+staticfiles/
+
+# VS Code / IDE settings
+.vscode/
+.idea/
+
+# MacOS / Windows system files
+.DS_Store
+Thumbs.db
+
+# Pytest / coverage
+.coverage
+*.cover
+htmlcov/
+
+# Migrations cache (optional, keep migrations if you need them in repo)
+# */migrations/*.py
+# !*/migrations/__init__.py

@@ -16,8 +16,9 @@ from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework_simplejwt.exceptions import TokenError
 import logging
 
-from .serializers import LoginSerializer, UserSerializer, UserProfileSerializer, SignUpSerializer, InstructionsSerializer, OfflineSerializer, DownloadsSerializer, PublicationsSerializer
+from .serializers import LoginSerializer, UserSerializer, UserProfileSerializer, SignUpSerializer, InstructionsSerializer, OfflineSerializer, DownloadsSerializer, PublicationsSerializer, FeedbackSerializer
 from .models import HomePageInformation
+from .models import Feedback
 
 logger = logging.getLogger(__name__)
 
@@ -761,3 +762,18 @@ class HomePageView(APIView):
         else:
             return Response({"error": "Invalid tab_type"}, status=status.HTTP_400_BAD_REQUEST)
         return Response(serializer.data)
+    
+class FeedbackAPIView(APIView):
+    permission_classes = [AllowAny]
+
+    def get(self, request):
+        feedbacks = Feedback.objects.all()
+        serializer = FeedbackSerializer(feedbacks, many=True)
+        return Response(serializer.data)
+
+    def post(self, request):
+        serializer = FeedbackSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

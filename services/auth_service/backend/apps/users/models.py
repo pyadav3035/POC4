@@ -9,6 +9,7 @@ from django.contrib.auth.models import User
 from django.db import models
 from django.core.validators import RegexValidator
 import uuid
+from django.utils import timezone
 
 
 class UserProfile(models.Model):
@@ -198,3 +199,27 @@ class HomePageInformation(models.Model):
 
     def __str__(self):
         return f"{self.tab_type}: {self.title }"
+
+class Feedback(models.Model):
+    module = models.CharField(max_length=90)
+    userlogin = models.IntegerField()
+    remarks = models.CharField(max_length=900, blank=True, null=True)
+    insert_datetime = models.DateTimeField(default=timezone.now)
+    modified_datetime = models.DateTimeField(blank=True)
+    is_active = models.IntegerField()
+    username = models.CharField(max_length=50)
+    personal_no = models.CharField(max_length=50, blank=True, null=True)
+    phone_no = models.CharField(max_length=20, blank=True, null=True)
+    nudid = models.CharField(max_length=20, blank=True, null=True)
+    question1 = models.CharField(max_length=10, blank=True, null=True)
+    question2 = models.CharField(max_length=10, blank=True, null=True)
+    question3 = models.CharField(max_length=10, blank=True, null=True)
+    question4 = models.CharField(max_length=10, blank=True, null=True)
+    avg_feedback = models.CharField(max_length=500, blank=True, null=True)
+
+    class Meta:
+        db_table = 'tbl_usermgmt_feedback'
+
+    def __str__(self):
+        return f"{self.username} - Avg: {self.avg_feedback}"
+    
